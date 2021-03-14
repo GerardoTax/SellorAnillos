@@ -4,8 +4,8 @@ public class Dados {
     public Dados(){
     }
     public static int tirarDado(int valorMinimo, int valorMaximo, int cantDados, boolean mostrarMensaje){
-        int dado = valorMinimo;
-        int resultado = valorMinimo;
+        int dado = 0;
+        int resultado = 0;
         for (int i = 1; i <= cantDados; i++) {
             dado =(int) Math.floor(Math.random()*(valorMaximo-valorMinimo+1)+valorMinimo);
             if (mostrarMensaje)

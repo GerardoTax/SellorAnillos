@@ -1,8 +1,13 @@
 public class Heroes extends Personajes {
-    
-    public Heroes(String nombre, int vida , int armadura){
+    private static int instanciasHeroes;
 
-        super(nombre, vida, armadura);
+    public Heroes(String nombre, int vida , int armadura, int ataque){
+
+        super(nombre, vida, armadura,ataque);
 
     }
+    public static int getInstancias(){
+        return Heroes.instanciasHeroes;
+    }
 }
+
